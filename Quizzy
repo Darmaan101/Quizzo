@@ -1,0 +1,335 @@
+from tkinter import *
+from tkinter import ttk
+
+y = 0
+a = ttk.Notebook()
+frame1 = ttk.Frame(a)
+frame2 = ttk.Frame(a)
+frame3 = ttk.Frame(a)
+frame4 = ttk.Frame(a)
+frame5 = ttk.Frame(a)
+frame6 = ttk.Frame(a)
+frame7 = ttk.Frame(a)
+frame8 = ttk.Frame(a)
+frame9 = ttk.Frame(a)
+frame10 = ttk.Frame(a)
+frame11 = ttk.Frame(a)
+frame12 = ttk.Frame(a)
+frame13 = ttk.Frame(a)
+frame14 = ttk.Frame(a)
+frame15 = ttk.Frame(a)
+frame16 = ttk.Frame(a)
+frame17 = ttk.Frame(a)
+frame18 = ttk.Frame(a)
+frame19 = ttk.Frame(a)
+frame20 = ttk.Frame(a)
+
+
+
+root = ttk.Frame(a)
+
+def quiz(y):
+    a.add(frame1, text="Q1")
+    a.add(frame2, text="Q2")
+    a.add(frame3, text="Q3")
+    a.add(frame4, text="Q4")
+    a.add(frame5, text="Q5")
+    a.add(frame6, text="Q6")
+    a.add(frame7, text="Q7")
+    a.add(frame8, text="Q8")
+    a.add(frame9, text="Q9")
+    a.add(frame10, text="Q10")
+    a.add(frame11, text="Q11")
+    a.add(frame12, text="Q12")
+    a.add(frame13, text="Q13")
+    a.add(frame14, text="Q14")
+    a.add(frame15, text="Q15")
+    a.add(frame16, text="Q16")
+    a.add(frame17, text="Q17")
+    a.add(frame18, text="Q18")
+    a.add(frame19, text="Q19")
+    a.add(frame20, text="Q20")
+
+    Label(frame1, text="What is the Capital of Somalia?: ", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame1, text="Mogadishu", font=("Arial", 20, "bold"), bg="light blue",command=a1_right).grid(row=3, column=2)
+    Button(frame1, text="Nairobi",font=("Arial", 20, "bold"), bg="light green",command=a1_wrong).grid(row=4, column=2)
+    Button(frame1, text="Addis Ababa",font=("Arial", 20, "bold"), bg="light pink",command=a1_wrong).grid(row=5, column=2)
+    Button(frame1, text="Asmara",font=("Arial", 20, "bold"), bg="red",command=a1_wrong).grid(row=6, column=2)
+
+    Label(frame2, text="What is the Capital of Rwanda? ", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame2, text="Kinshasa", font=("Arial", 30, "bold"), bg="light blue",command=a2_wrong).grid(row=3, column=2)
+    Button(frame2, text="Abuja",font=("Arial", 30, "bold"), bg="light green",command=a2_wrong).grid(row=4, column=2)
+    Button(frame2, text="Kigali",font=("Arial", 30, "bold"), bg="light pink",command=a2_right).grid(row=5, column=2)
+    Button(frame2, text="Cape Town",font=("Arial", 30, "bold"), bg="light pink",command=a2_wrong).grid(row=6, column=2)
+
+    Label(frame3, text="What is the Capital of Namibia? ", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame3, text="Dakar", font=("Arial", 30, "bold"), bg="light blue",command=a3_wrong).grid(row=3, column=2)
+    Button(frame3, text="Accra",font=("Arial", 30, "bold"), bg="light green",command=a3_wrong).grid(row=4, column=2)
+    Button(frame3, text="Windhoek",font=("Arial", 30, "bold"), bg="light pink",command=a3_right).grid(row=5, column=2)
+    Button(frame3, text="Algiers",font=("Arial", 30, "bold"), bg="light pink",command=a3_wrong).grid(row=6, column=2)
+
+    Label(frame4, text="What is the Capital of Sudan?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame4, text="Khartoum", font=("Arial", 30, "bold"), bg="light blue",command=a4_right).grid(row=3, column=2)
+    Button(frame4, text="Luanda",font=("Arial", 30, "bold"), bg="light green",command=a4_wrong).grid(row=4, column=2)
+    Button(frame4, text="Maputo",font=("Arial", 30, "bold"), bg="light pink",command=a4_wrong).grid(row=5, column=2)
+    Button(frame4, text="Bamako",font=("Arial", 30, "bold"), bg="light pink",command=a4_wrong).grid(row=6, column=2)
+
+    Label(frame5, text="What is the Capital of Morocco? ", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame5, text="Tripoli", font=("Arial", 30, "bold"), bg="light blue",command=a5_wrong).grid(row=3, column=2)
+    Button(frame5, text="Banjul",font=("Arial", 30, "bold"), bg="light green",command=a5_wrong).grid(row=4, column=2)
+    Button(frame5, text="Yaounde",font=("Arial", 30, "bold"), bg="light pink",command=a5_wrong).grid(row=5, column=2)
+    Button(frame5, text="Rabat",font=("Arial", 30, "bold"), bg="light pink",command=a5_right).grid(row=6, column=2)
+
+    Label(frame6, text="What is the Capital of Togo", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame6, text="Cairo", font=("Arial", 30, "bold"), bg="light blue",command=a6_wrong).grid(row=3, column=2)
+    Button(frame6, text="Lome",font=("Arial", 30, "bold"), bg="light green",command=a6_right).grid(row=4, column=2)
+    Button(frame6, text="Kampala",font=("Arial", 30, "bold"), bg="light pink",command=a6_wrong).grid(row=5, column=2)
+    Button(frame6, text="Gaborone",font=("Arial", 30, "bold"), bg="light pink",command=a6_wrong).grid(row=6, column=2)
+
+    Label(frame7, text="What is the Capital of Eritrea?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame7, text="Mogadisho", font=("Arial", 30, "bold"), bg="light blue",command=a7_wrong).grid(row=3, column=2)
+    Button(frame7, text="Asmara",font=("Arial", 30, "bold"), bg="light green",command=a7_right).grid(row=4, column=2)
+    Button(frame7, text="Juba",font=("Arial", 30, "bold"), bg="light pink",command=a7_wrong).grid(row=5, column=2)
+    Button(frame7, text="Nairobi",font=("Arial", 30, "bold"), bg="light pink",command=a7_wrong).grid(row=6, column=2)
+
+    Label(frame8, text="What is the Capital of Madagascar?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame8, text="Banjul", font=("Arial", 30, "bold"), bg="light blue",command=a8_wrong).grid(row=3, column=2)
+    Button(frame8, text="Porto Novo",font=("Arial", 30, "bold"), bg="light green",command=a8_wrong).grid(row=4, column=2)
+    Button(frame8, text="Antananavario",font=("Arial", 30, "bold"), bg="light pink",command=a8_right).grid(row=5, column=2)
+    Button(frame8, text="Mbabane",font=("Arial", 30, "bold"), bg="light pink",command=a8_wrong).grid(row=6, column=2)
+
+    Label(frame9, text="What is the Capital of Guinea? ", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame9, text="Conakry", font=("Arial", 30, "bold"), bg="light blue",command=a9_right).grid(row=3, column=2)
+    Button(frame9, text="Harare",font=("Arial", 30, "bold"), bg="light green",command=a9_wrong).grid(row=4, column=2)
+    Button(frame9, text="Freetown",font=("Arial", 30, "bold"), bg="light pink",command=a9_wrong).grid(row=5, column=2)
+    Button(frame9, text="Kampala",font=("Arial", 30, "bold"), bg="light pink",command=a9_wrong).grid(row=6, column=2)
+
+    Label(frame10, text="What is the Capital of Zimbabwe?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame10, text="Harare", font=("Arial", 30, "bold"), bg="light blue",command=a10_right).grid(row=3, column=2)
+    Button(frame10, text="Libreville",font=("Arial", 30, "bold"), bg="light green",command=a10_wrong).grid(row=4, column=2)
+    Button(frame10, text="Luanda",font=("Arial", 30, "bold"), bg="light pink",command=a10_wrong).grid(row=5, column=2)
+    Button(frame10, text="Malabo",font=("Arial", 30, "bold"), bg="light pink",command=a10_wrong).grid(row=6, column=2)
+
+    Label(frame11, text="What is the Capital of South Sudan", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame11, text="Juba", font=("Arial", 30, "bold"), bg="light blue",command=a11_right).grid(row=3, column=2)
+    Button(frame11, text="Khartoum",font=("Arial", 30, "bold"), bg="light green",command=a11_wrong).grid(row=4, column=2)
+    Button(frame11, text="Lusaka",font=("Arial", 30, "bold"), bg="light pink",command=a11_wrong).grid(row=5, column=2)
+    Button(frame11, text="Freetown",font=("Arial", 30, "bold"), bg="light pink",command=a11_wrong).grid(row=6, column=2)
+
+    Label(frame12, text="What is the Capital of Senegal?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame12, text="Tripoli", font=("Arial", 30, "bold"), bg="light blue",command=a12_wrong).grid(row=3, column=2)
+    Button(frame12, text="Niamey",font=("Arial", 30, "bold"), bg="light green",command=a12_wrong).grid(row=4, column=2)
+    Button(frame12, text="Lilongwe",font=("Arial", 30, "bold"), bg="light pink",command=a12_wrong).grid(row=5, column=2)
+    Button(frame12, text="Dakar",font=("Arial", 30, "bold"), bg="light pink",command=a12_right).grid(row=6, column=2)
+
+    Label(frame13, text="What is the Capital of Guinea-Bissau", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame13, text="Conakry", font=("Arial", 30, "bold"), bg="light blue",command=a13_wrong).grid(row=3, column=2)
+    Button(frame13, text="Bissau",font=("Arial", 30, "bold"), bg="light green",command=a13_right).grid(row=4, column=2)
+    Button(frame13, text="Accra",font=("Arial", 30, "bold"), bg="light pink",command=a13_wrong).grid(row=5, column=2)
+    Button(frame13, text="Libreville",font=("Arial", 30, "bold"), bg="light pink",command=a13_wrong).grid(row=6, column=2)
+
+    Label(frame14, text="What is the Capital of Egypt?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame14, text="Moroni", font=("Arial", 30, "bold"), bg="light blue",command=a14_wrong).grid(row=3, column=2)
+    Button(frame14, text="Kinshasa",font=("Arial", 30, "bold"), bg="light green",command=a14_wrong).grid(row=4, column=2)
+    Button(frame14, text="Cairo",font=("Arial", 30, "bold"), bg="light pink",command=a14_right).grid(row=5, column=2)
+    Button(frame14, text="N'Djamena",font=("Arial", 30, "bold"), bg="light pink",command=a14_wrong).grid(row=6, column=2)
+
+    Label(frame15, text="What is the Capital of Gabon?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame15, text="Praia", font=("Arial", 30, "bold"), bg="light blue",command=a15_wrong).grid(row=3, column=2)
+    Button(frame15, text="Bujumbura",font=("Arial", 30, "bold"), bg="light green",command=a15_wrong).grid(row=4, column=2)
+    Button(frame15, text="Gaborone",font=("Arial", 30, "bold"), bg="light pink",command=a15_right).grid(row=5, column=2)
+    Button(frame15, text="Porto-Novo",font=("Arial", 30, "bold"), bg="light pink",command=a15_wrong).grid(row=6, column=2)
+
+    Label(frame16, text="What is the Capital of Burundi?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame16, text="Ouagadougou", font=("Arial", 30, "bold"), bg="light blue",command=a16_wrong).grid(row=3, column=2)
+    Button(frame16, text="Yaoundé",font=("Arial", 30, "bold"), bg="light green",command=a16_wrong).grid(row=4, column=2)
+    Button(frame16, text="Pretoria",font=("Arial", 30, "bold"), bg="light pink",command=a16_wrong).grid(row=5, column=2)
+    Button(frame16, text="Bujumbura",font=("Arial", 30, "bold"), bg="light pink",command=a16_right).grid(row=6, column=2)
+
+    Label(frame17, text="What is the Capital of Burkina Faso?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame17, text="São Tomé", font=("Arial", 30, "bold"), bg="light blue",command=a17_wrong).grid(row=3, column=2)
+    Button(frame17, text="Djibouti",font=("Arial", 30, "bold"), bg="light green",command=a17_wrong).grid(row=4, column=2)
+    Button(frame17, text="Bangui",font=("Arial", 30, "bold"), bg="light pink",command=a17_wrong).grid(row=5, column=2)
+    Button(frame17, text="Ouagadougou",font=("Arial", 30, "bold"), bg="light pink",command=a17_right).grid(row=6, column=2)
+
+    Label(frame18, text="What is the Capital of Eswatini?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame18, text="Abuja", font=("Arial", 30, "bold"), bg="light blue",command=a18_wrong).grid(row=3, column=2)
+    Button(frame18, text="Mogadisho",font=("Arial", 30, "bold"), bg="light green",command=a18_wrong).grid(row=4, column=2)
+    Button(frame18, text="Mbabane",font=("Arial", 30, "bold"), bg="light pink",command=a18_right).grid(row=5, column=2)
+    Button(frame18, text="Tunis",font=("Arial", 30, "bold"), bg="light pink",command=a18_wrong).grid(row=6, column=2)
+
+    Label(frame19, text="What is the Capital of Djibouti?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame19, text="Port Louis", font=("Arial", 30, "bold"), bg="light blue",command=a19_wrong).grid(row=3, column=2)
+    Button(frame19, text="Djibouti",font=("Arial", 30, "bold"), bg="light green",command=a19_right).grid(row=4, column=2)
+    Button(frame19, text="Maseru",font=("Arial", 30, "bold"), bg="light pink",command=a19_wrong).grid(row=5, column=2)
+    Button(frame19, text="Bamako",font=("Arial", 30, "bold"), bg="light pink",command=a19_wrong).grid(row=6, column=2)
+
+    Label(frame20, text="What is the Capital of Mozambique?", font=("Arial", 50, "bold")).grid(row=2, column=2)
+    Button(frame20, text="Dodoma", font=("Arial", 30, "bold"), bg="light blue",command=a20_wrong).grid(row=3, column=2)
+    Button(frame20, text="Maseru",font=("Arial", 30, "bold"), bg="light green",command=a20_wrong).grid(row=4, column=2)
+    Button(frame20, text="Kigali",font=("Arial", 30, "bold"), bg="light pink",command=a20_wrong).grid(row=5, column=2)
+    Button(frame20, text="Maputo",font=("Arial", 30, "bold"), bg="light pink",command=a20_right).grid(row=6, column=2)
+
+def a1_right():
+    Label(frame1, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame1, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a1_wrong():
+    Label(frame1, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame1, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a2_right():
+    Label(frame2, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame2, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a2_wrong():
+    Label(frame2, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame2, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a3_right():
+    Label(frame3, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame3, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a3_wrong():
+    Label(frame3, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame3, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a4_right():
+    Label(frame4, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame4, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a4_wrong():
+    Label(frame4, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame4, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a5_right():
+    Label(frame5, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame5, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a5_wrong():
+    Label(frame5, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame5, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a6_right():
+    Label(frame6, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame6, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a6_wrong():
+    Label(frame6, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame6, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a7_right():
+    Label(frame7, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame7, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a7_wrong():
+    Label(frame7, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame7, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a8_right():
+    Label(frame8, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame8, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a8_wrong():
+    Label(frame8, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame8, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a9_right():
+    Label(frame9, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame9, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a9_wrong():
+    Label(frame9, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame9, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a10_right():
+    Label(frame10, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame10, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a10_wrong():
+    Label(frame10, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame10, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a11_right():
+    Label(frame11, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame11, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a11_wrong():
+    Label(frame11, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame11, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a12_right():
+    Label(frame12, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame12, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a12_wrong():
+    Label(frame12, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame12, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a13_right():
+    Label(frame13, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame13, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a13_wrong():
+    Label(frame13, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame13, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a14_right():
+    Label(frame14, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame14, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a14_wrong():
+    Label(frame14, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame14, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a15_right():
+    Label(frame15, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame15, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a15_wrong():
+    Label(frame15, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame15, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a16_right():
+    Label(frame16, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame16, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a16_wrong():
+    Label(frame16, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame16, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a17_right():
+    Label(frame17, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame17, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a17_wrong():
+    Label(frame17, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame17, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a18_right():
+    Label(frame18, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame18, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a18_wrong():
+    Label(frame18, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame18, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a19_right():
+    Label(frame19, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame19, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a19_wrong():
+    Label(frame19, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame19, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a20_right():
+    Label(frame20, text="Correct", font=("Arial", 40, "bold"), background="green", fg="yellow").grid(row=1, column=2)
+    Label(frame20, text="Marks Obtained : 1", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+def a20_wrong():
+    Label(frame20, text="Incorrect", font=("Arial", 40, "bold"), background="red", fg="yellow").grid(row=1, column=2)
+    Label(frame20, text="Marks Obtained : 0", font=("Arial", 40, "bold"), background="black", fg="white").grid(row=1, column=3)
+
+quiz(y)
+a.pack()
+a.mainloop()
